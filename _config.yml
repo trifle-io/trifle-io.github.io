@@ -28,9 +28,9 @@ twitter_username: trifle_io
 github_username:  trifle-io
 
 # Build settings
-theme: just-the-docs
-plugins:
-  # - jekyll-feed
+theme: "just-the-docs"
+# plugins:
+#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
