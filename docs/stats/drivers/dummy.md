@@ -3,12 +3,12 @@ layout: default
 title: Dummy
 parent: Driver
 grand_parent: Trifle::Stats
-nav_order: 2
+nav_order: 3
 ---
 
 # Dummy
 
-Sample of using custom driver that does, well, nothing useful.
+Not a real driver, just an example how you could write your own driver in 10 lines. This one does, well, nothing useful.
 
 ```ruby
 irb(main):001:1* class Dummy

@@ -3,6 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+title: Hey there!
+nav_order: 1
+has_children: false
 ---
 
 [![Gem Version](https://badge.fury.io/rb/trifle-ruby.svg)](https://badge.fury.io/rb/trifle-ruby)

@@ -2,31 +2,25 @@
 layout: default
 title: Usage
 parent: Trifle::Stats
-nav_order: 2
+nav_order: 3
 ---
 
 # Usage
 
-You don't need to use it with Rails, but you still need to run `Trifle::Stats.configure`. If youre running it with Rails, create `config/initializers/trifle.rb` and configure the gem.
-
-```ruby
-Trifle::Stats.configure do |config|
-  config.driver = Trifle::Stats::Driver::Redis.new
-  config.track_ranges = [:hour, :day]
-  config.time_zone = 'Europe/Bratislava'
-  config.beginning_of_week = :monday
-end
-```
+`Trifle::Stats` comes with couple class level methods that are shorthands for operations. They do it's thing to understand what type of operation are you trying to perform. If you pass in `at` parameter, it will know you need timeline operations, etc. There are two main methods `track` and `values`. As you guessed, `track` tracks and `values` values. Duh.
 
 ## Track values
 
 Available ranges are `:minute`, `:hour`, `:day`, `:week`, `:month`, `:quarter`, `:year`.
 
-Now track your first metrics
+Track your first metrics
 ```ruby
 Trifle::Stats.track(key: 'event::logs', at: Time.now, values: {count: 1, duration: 2, lines: 241})
 => [{2021-01-25 16:00:00 +0100=>{:count=>1, :duration=>2, :lines=>241}}, {2021-01-25 00:00:00 +0100=>{:count=>1, :duration=>2, :lines=>241}}]
-# or do it few more times
+```
+
+Then do it few more times
+```ruby
 Trifle::Stats.track(key: 'event::logs', at: Time.now, values: {count: 1, duration: 1, lines: 56})
 => [{2021-01-25 16:00:00 +0100=>{:count=>1, :duration=>1, :lines=>56}}, {2021-01-25 00:00:00 +0100=>{:count=>1, :duration=>1, :lines=>56}}]
 Trifle::Stats.track(key: 'event::logs', at: Time.now, values: {count: 1, duration: 5, lines: 361})
@@ -48,8 +42,10 @@ Trifle::Stats.track(key: 'event::logs', at: Time.now, values: {
 
 ## Get values
 
-Retrieve your values for specific `range`.
+Retrieve your values for specific `range`
 ```ruby
 Trifle::Stats.values(key: 'event::logs', from: Time.now, to: Time.now, range: :day)
 => [{2021-01-25 00:00:00 +0100=>{"count"=>3, "duration"=>8, "lines"=>658}}]
 ```
+
+<sub><sup>Honestly, thats it. Now instead of building your own analytics, go do something useful. You can buy me coffee later. K, thx, bye!</sup></sub>

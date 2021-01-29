@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Driver
+title: Drivers
 parent: Trifle::Stats
 nav_order: 4
 has_children: true
