@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Gitpod
+title: Gitpod ready
 nav_order: 4
 has_children: false
 ---
