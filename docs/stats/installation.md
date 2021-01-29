@@ -5,7 +5,7 @@ parent: Trifle::Stats
 nav_order: 1
 ---
 
-## Installation
+# Installation
 
 Add this line to your application's Gemfile:
 

@@ -5,7 +5,7 @@ parent: Trifle::Stats
 nav_order: 2
 ---
 
-## Usage
+# Usage
 
 You don't need to use it with Rails, but you still need to run `Trifle::Ruby.configure`. If youre running it with Rails, create `config/initializers/trifle-ruby.rb` and configure the gem.
 
@@ -18,7 +18,7 @@ Trifle::Ruby.configure do |config|
 end
 ```
 
-### Track values
+## Track values
 
 Available ranges are `:minute`, `:hour`, `:day`, `:week`, `:month`, `:quarter`, `:year`.
 
@@ -46,7 +46,7 @@ Trifle::Ruby.track(key: 'event::logs', at: Time.now, values: {
 })
 ```
 
-### Get values
+## Get values
 
 Retrieve your values for specific `range`.
 ```ruby

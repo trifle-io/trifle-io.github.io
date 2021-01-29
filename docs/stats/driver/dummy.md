@@ -6,9 +6,7 @@ grand_parent: Trifle::Stats
 nav_order: 2
 ---
 
-# Redis
-
-## Dummy driver
+# Dummy
 
 Sample of using custom driver that does, well, nothing useful.
 
