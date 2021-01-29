@@ -10,7 +10,7 @@ nav_order: 1
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'trifle-ruby'
+gem 'trifle-stats'
 ```
 
 And then execute:
@@ -19,4 +19,4 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install trifle-ruby
+    $ gem install trifle-stats

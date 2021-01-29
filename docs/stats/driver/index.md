@@ -18,7 +18,7 @@ Some databases cannot store nested hashes/values. Or they cannot perform increme
 
 ```ruby
 class Sample
-  include Trifle::Ruby::Mixins::Packer
+  include Trifle::Stats::Mixins::Packer
 end
 
 values = { a: 1, b: { c: 22, d: 33 } }

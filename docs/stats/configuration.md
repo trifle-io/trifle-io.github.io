@@ -19,21 +19,21 @@ Gem expecs global configuration to be present. You can do this by creating initi
 Custom configuration can be passed as a keyword argument to `Resource` objects and all module methods (`track`, `values`). This way you can pass different driver or ranges for different type of data youre storing - ie set different ranges or set expiration date on your data.
 
 ```ruby
-configuration = Trifle::Ruby::Configuration.new
-configuration.driver = Trifle::Ruby::Driver::Redis.new
+configuration = Trifle::Stats::Configuration.new
+configuration.driver = Trifle::Stats::Driver::Redis.new
 configuration.track_ranges = [:day]
 configuration.time_zone = 'GMT'
 configuration.separator = '#'
 
 # or use different driver
-mongo_configuration = Trifle::Ruby::Configuration.new
-mongo_configuration.driver = Trifle::Ruby::Driver::MongoDB.new
+mongo_configuration = Trifle::Stats::Configuration.new
+mongo_configuration.driver = Trifle::Stats::Driver::MongoDB.new
 mongo_configuration.time_zone = 'Asia/Dubai'
 ```
 
 You can then pass it into module methods.
 ```ruby
-Trifle::Ruby.track(key: 'event#checkout', at: Time.now, values: {count: 1}, config: configuration)
+Trifle::Stats.track(key: 'event#checkout', at: Time.now, values: {count: 1}, config: configuration)
 
-Trifle::Ruby.track(key: 'event#checkout', at: Time.now, values: {count: 1}, config: mongo_configuration)
+Trifle::Stats.track(key: 'event#checkout', at: Time.now, values: {count: 1}, config: mongo_configuration)
 ```
