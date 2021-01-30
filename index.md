@@ -10,9 +10,9 @@ has_children: false
 
 Opinionated [Swiss Army knife](https://en.wikipedia.org/wiki/Swiss_Army_knife) of little big tools.
 
-These gems came from necessity of building better solutions to common problems. Tired of using _shitty_ analytics and reading through _shitty_ log output. It's time to stop writing code that you have just little visibility of whats going on there.
+These gems came from necessity of building better solutions to common problems. Tired of using _shitty_ analytics and reading through _shitty_ log output.
 
-They are small and simple. And that is OK. It is not one solution fits all type of things. Sorry to disappoint.
+These are small and simple. And that is OK. It is not one solution fits all type of things.
 
 ___
 
@@ -26,14 +26,15 @@ Simple analytics backed by Redis, Postgres, MongoDB, Google Analytics, Segment, 
 
 It gets you from having bunch of these occuring within few minutes
 ```ruby
-{ count: 1, duration: 2, lines: 241 }
-{ count: 1, duration: 1, lines: 56 }
-{ count: 1, duration: 5, lines: 361 }
+Trifle::Stats.track(key: 'event::logs', at: Time.now, values: { count: 1, duration: 2, lines: 241 })
+Trifle::Stats.track(key: 'event::logs', at: Time.now, values: { count: 1, duration: 1, lines: 56 })
+Trifle::Stats.track(key: 'event::logs', at: Time.now, values: { count: 1, duration: 5, lines: 361 })
 ```
 
 To being able to say what happened on 25th January 2021.
 ```ruby
-[{2021-01-25 00:00:00 +0100=>{"count"=>3, "duration"=>8, "lines"=>658}}]
+Trifle::Stats.values(key: 'event::logs', from: Time.now, to: Time.now, range: :day)
+=> [{2021-01-25 00:00:00 +0100=>{"count"=>3, "duration"=>8, "lines"=>658}}]
 ```
 
 More [here](/docs/stats/).
