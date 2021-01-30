@@ -7,7 +7,7 @@ has_children: false
 
 # Gitpod
 
-This gems come Gitpod ready. If you wanna try and get your hands dirty with Trifle, click the bedge in certain gem and watch magic happening. Badge like this [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-ruby)
+This gems come Gitpod ready. If you wanna try and get your hands dirty with Trifle, click the bedge in certain gem and watch magic happening. Badge like this [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-stats)
 
 
 It launches from custom base image that includes Redis, MongoDB, Postgres & MariaDB. This should give you enough playground to launch `./bin/console` and start messing around. You can see the Gitpod image in the [hub](https://hub.docker.com/r/trifle/gitpod).

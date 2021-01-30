@@ -7,9 +7,9 @@ has_children: true
 
 # Trifle::Logger
 
-[![Gem Version](https://badge.fury.io/rb/trifle-ruby.svg)](https://badge.fury.io/rb/trifle-ruby)
-![Ruby](https://github.com/trifle-io/trifle-ruby/workflows/Ruby/badge.svg?branch=main)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-ruby)
+[![Gem Version](https://badge.fury.io/rb/trifle-logger.svg)](https://badge.fury.io/rb/trifle-logger)
+![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-logger)
 
 Simple logger backed by Redis, Postgres, MongoDB, or whatever.
 
