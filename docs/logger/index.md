@@ -7,11 +7,11 @@ has_children: true
 
 # Trifle::Logger
 
-[![Gem Version](https://badge.fury.io/rb/trifle-logger.svg)](https://badge.fury.io/rb/trifle-logger)
-![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)
+[![Gem Version](https://badge.fury.io/rb/trifle-logger.svg)](https://rubygems.org/gems/trifle-logger)
+[![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-logger)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-logger)
 
-Simple logger backed by Redis, Postgres, MongoDB, or whatever.
+Simple logger that collects log messages and return values from blocks.  that you can persist in database of your choice.
 
 `Trifle::Logger` is a _way too_ simple timeline logger that helps you track custom outputs. Ideal for any code from blackbox category (aka background-job-that-talks-to-API-and-works-every-time-when-you-run-it-manually-but-never-when-in-production type of jobs)
 

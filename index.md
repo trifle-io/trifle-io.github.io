@@ -15,11 +15,10 @@ These gems came from necessity of building better solutions to common problems. 
 These are small and simple. And that is OK. It is not one solution fits all type of things.
 
 ___
-
 # `Trifle::Stats`
 
-[![Gem Version](https://badge.fury.io/rb/trifle-stats.svg)](https://badge.fury.io/rb/trifle-stats)
-![Ruby](https://github.com/trifle-io/trifle-stats/workflows/Ruby/badge.svg?branch=main)
+[![Gem Version](https://badge.fury.io/rb/trifle-stats.svg)](https://rubygems.org/gems/trifle-stats)
+[![Ruby](https://github.com/trifle-io/trifle-stats/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-stats)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-stats)
 
 Simple analytics backed by Redis, Postgres, MongoDB, Google Analytics, Segment, or whatever.
@@ -39,11 +38,11 @@ Trifle::Stats.values(key: 'event::logs', from: Time.now, to: Time.now, range: :d
 
 More [here](/docs/stats/).
 
-
+---
 # `Trifle::Logger`
 
-[![Gem Version](https://badge.fury.io/rb/trifle-logger.svg)](https://badge.fury.io/rb/trifle-logger)
-![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)
+[![Gem Version](https://badge.fury.io/rb/trifle-logger.svg)](https://rubygems.org/gems/trifle-logger)
+[![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-logger)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-logger)
 
 Simple log tracer that collects messages and values from your code and returns JSON (at least for now).
