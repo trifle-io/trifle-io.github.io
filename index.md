@@ -45,7 +45,7 @@ More [here](/docs/stats/).
 [![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-logger)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-logger)
 
-Simple log tracer that collects messages and values from your code and returns JSON (at least for now).
+Simple log tracer that collects messages and values from your code and returns Hash (at least for now).
 
 It saves you from reading through your standard logger
 ```ruby
