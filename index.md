@@ -78,6 +78,7 @@ More [here](/docs/logger/).
 Simple encrypted store for environment variables in your database.
 
 Did you ever wish you could update your ENV variables from your UI while storing them encrypted at rest?
+
 ```ruby
 Trifle::Env['CLIENT_ID'] = 'cool_client_Id'
 Trifle::Env['CLIENT_SECRET'] = 'supersecretclientsecret'
