@@ -65,3 +65,31 @@ To being able to say what happened on 25th January 2021.
 ```
 
 More [here](/docs/logger/).
+
+---
+# `Trifle::Env`
+
+[![Gem Version](https://badge.fury.io/rb/trifle-env.svg)](https://rubygems.org/gems/trifle-env)
+[![Ruby](https://github.com/trifle-io/trifle-env/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-env)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-env)
+
+Simple encrypted store for environment variables in your database.
+
+Did you ever wish you could update your ENV variables from your own UI? While storing them encrypted at rest?
+```ruby
+Trifle::=]Logger.trace('This is important output')
+now = Trifle::Logger.trace('And it\'s important to know it happened at') do
+  Time.now
+end
+```
+
+To being able to say what happened on 25th January 2021.
+```ruby
+[
+  {at: 2021-01-25 00:00:00 +0100, message: 'This is important output', state: :success, head: false, meta: false}
+  {at: 2021-01-25 00:00:00 +0100, message: 'And it\'s important to know it happened ', state: :success, head: false, meta: false}
+  {at: 2021-01-25 00:00:00 +0100, message: '=> 2021-01-25 00:00:00 +0100', state: :success, head: false, meta: true}
+]
+```
+
+More [here](/docs/logger/).
