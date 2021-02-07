@@ -31,3 +31,7 @@ Trifle::Env['AUTH_TOKEN'] = 'supersecrettoken'
 Trifle::Env['AUTH_TOKEN']
 => 'supersecrettoken'
 ```
+
+## When to use `ENV` and when `Trifle::Env`
+
+The rule of thumb is that as long as you don't need the variable during app initialization, it belongs to DB.
