@@ -66,3 +66,6 @@ Other times you may wanna point out that something caused an error. Pass `state:
 
 ```ruby
 Trifle::Logger.trace('Connection failed', state: :error)
+```
+
+## Result
