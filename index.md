@@ -14,6 +14,8 @@ These gems came from necessity of building better solutions to common problems. 
 
 These are small and simple. And that is OK. It is not one solution fits all type of things.
 
+All gems from this collection are released under MIT license. You can find details inside of each gem.
+
 ___
 # `Trifle::Stats`
 
