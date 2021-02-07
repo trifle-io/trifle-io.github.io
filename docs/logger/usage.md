@@ -74,8 +74,8 @@ Here is an example of manual tracing in your ruby code. Callback just prints the
 
 ```ruby
 Trifle::Logger.configure do |config|
-  config.on(:wrapup) do |trace|
-    trace.data.each do |line|
+  config.on(:wrapup) do |tracer|
+    tracer.data.each do |line|
       puts line
     end
   end
