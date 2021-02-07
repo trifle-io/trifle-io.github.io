@@ -11,9 +11,9 @@ has_children: true
 [![Ruby](https://github.com/trifle-io/trifle-logger/workflows/Ruby/badge.svg?branch=main)](https://github.com/trifle-io/trifle-logger)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trifle-io/trifle-logger)
 
-Simple logger that collects log messages and return values from blocks.  that you can persist in database of your choice.
+Simple logger that collects log messages and return values from blocks. And on top of that you can persist in database/storage of your choice.
 
-`Trifle::Logger` is a _way too_ simple timeline logger that helps you track custom outputs. Ideal for any code from blackbox category (aka background-job-that-talks-to-API-and-works-every-time-when-you-run-it-manually-but-never-when-in-production type of jobs)
+`Trifle::Logger` is a _way too_ simple timeline logger that helps you track custom outputs. Ideal for any code from blackbox category (aka background-job-that-talks-to-API-and-works-every-time-when-you-run-it-manually-but-never-when-in-production type of jobs).
 
 ## Before
 You've probably seen code like:
@@ -30,7 +30,7 @@ module Cron
       Rails.logger.info "Found record in DB"
       body = { code: something.code, count: 100 }
       Rails.logger.info "Sending payload: #{body}"
-      
+
       RestClient.post('http://example.com/something', body)
       Rails.logger.info "Done?"
     end

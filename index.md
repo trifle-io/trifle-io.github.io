@@ -75,21 +75,14 @@ More [here](/docs/logger/).
 
 Simple encrypted store for environment variables in your database.
 
-Did you ever wish you could update your ENV variables from your own UI? While storing them encrypted at rest?
+Did you ever wish you could update your ENV variables from your UI while storing them encrypted at rest?
 ```ruby
-Trifle::=]Logger.trace('This is important output')
-now = Trifle::Logger.trace('And it\'s important to know it happened at') do
-  Time.now
-end
-```
+Trifle::Env['CLIENT_ID'] = 'cool_client_Id'
+Trifle::Env['CLIENT_SECRET'] = 'supersecretclientsecret'
 
-To being able to say what happened on 25th January 2021.
-```ruby
-[
-  {at: 2021-01-25 00:00:00 +0100, message: 'This is important output', state: :success, head: false, meta: false}
-  {at: 2021-01-25 00:00:00 +0100, message: 'And it\'s important to know it happened ', state: :success, head: false, meta: false}
-  {at: 2021-01-25 00:00:00 +0100, message: '=> 2021-01-25 00:00:00 +0100', state: :success, head: false, meta: true}
-]
-```
+require 'oauth2'
+client = OAuth2::Client.new(Trifle::Env['CLIENT_ID'], Trifle::Env['CLIENT_SECRET'], site: 'https://example.org')
+...
 
-More [here](/docs/logger/).
+
+More [here](/docs/env/).
