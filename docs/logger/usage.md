@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Usage
-parent: Trifle::Stats
+parent: Trifle::Logger
 nav_order: 3
 ---
 
