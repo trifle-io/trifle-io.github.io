@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Postgres
-parent: Driver
+parent: Drivers
 grand_parent: Trifle::Stats
 nav_order: 2
 ---

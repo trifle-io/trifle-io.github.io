@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Process
-parent: Driver
+parent: Drivers
 grand_parent: Trifle::Stats
 nav_order: 4
 ---

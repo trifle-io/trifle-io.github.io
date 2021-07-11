@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Dummy
-parent: Driver
+parent: Drivers
 grand_parent: Trifle::Stats
 nav_order: 5
 ---
