@@ -19,12 +19,6 @@ Trifle::Logger.tracer = Trifle::Logger::Tracer::Hash.new(key: 'my_trace', meta: 
 
 Tracer is stored on `Thread.current`. Be aware when multithreading.
 
-## Middleware
-
-While you don't need to include middleware, it gives you automatic tracing and wrapup on every rack call or sidekiq execution. You don't need to initialize tracer every time you want to trace something. Middleware does it automatically for you based on a key/meta you set.
-
-You can read more about each middleware configuration in its own section.
-
 ## Trace
 
 Once you initialize Tracer, manually or through middleware, you can start tracing your code.
@@ -82,7 +76,10 @@ Trifle::Logger.configure do |config|
 end
 ```
 
+You can read more about persisting and callbacks in, well, [Callbacks](/docs/logger/callbacks.html) doc.
+
 Then using examples from above you can get combined out
+
 ```ruby
 Trifle::Logger.tracer.wrapup
 {:at=>1612686322, :message=>"Trifle::Trace has been initialized for sample", :state=>:success, :head=>false, :meta=>false}
