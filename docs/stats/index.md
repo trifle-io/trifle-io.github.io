@@ -15,4 +15,4 @@ Simple analytics backed by Redis, Postgres, MongoDB, Google Analytics, Segment, 
 
 `Trifle::Stats` is a _way too_ simple timeline analytics that helps you track custom metrics. Automatically increments counters for each enabled range. It supports timezones and different week beginning.
 
-[^1]: TBH only Redis for now 💔.
+[^1]: TBH only database drivers for now 💔.
