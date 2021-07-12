@@ -32,7 +32,7 @@ Trifle::Logger.configure do |config|
   config.on(:wrapup) do |tracer|
     next if tracer.ignore
 
-    entry = LogEntry.create(
+    entry = Entry.create(
       key: tracer.key,
       data: tracer.data,
       state: tracer.state
@@ -49,8 +49,7 @@ Here is more complex example with utilizing all 3 callbacks.
 Trifle::Logger.configure do |config|
   config.bump_every = 5.seconds
   config.on(:liftoff) do |tracer|
-    # Create Entry
-    entry = LogEntry.create(
+    entry = Entry.create(
       key: tracer.key,
       data: tracer.data,
       state: tracer.state
@@ -59,7 +58,6 @@ Trifle::Logger.configure do |config|
   end
 
   config.on(:bump) do |tracer|
-    # Update Entry
     entry = Entry.find_by(id: tracer.reference)
     next if entry.nil?
 
